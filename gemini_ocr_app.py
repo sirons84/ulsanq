@@ -53,10 +53,10 @@ if image:
     # 이미지 표시
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.image(image, caption="업로드된 이미지", use_container_width=True)
+        st.image(image, caption="업로드된 이미지", use_column_width=True)
     
     # 분석 버튼
-    if st.button("🔍 텍스트 인식 및 맞춤법 교정", type="primary", use_container_width=True):
+    if st.button("🔍 텍스트 인식 및 맞춤법 교정", type="primary"):
         with st.spinner("AI가 이미지를 분석 중입니다..."):
             try:
                 # Gemini 모델 설정 (Gemini 2.5 Flash 사용)
